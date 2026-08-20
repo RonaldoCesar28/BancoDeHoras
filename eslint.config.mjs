@@ -18,4 +18,12 @@ export default [
       'semi': ['error', 'always'],
     },
   },
+
+  // Configuração específica para arquivos de teste
+  {
+    files: ['**/*.test.{js,mjs,cjs}', '**/*.spec.{js,mjs,cjs}', '**/tests/**/*.{js,mjs,cjs}'],
+    rules: {
+      'no-undef': 'off',
+    },
+  },
 ];
